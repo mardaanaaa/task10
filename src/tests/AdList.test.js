@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import configureStore from 'redux-mock-store'; // You might need to install this package
-import AdList from './AdList';
+import configureStore from 'redux-mock-store';
+import AdList from '../components/AdList.js';
 
 const mockStore = configureStore([]);
 

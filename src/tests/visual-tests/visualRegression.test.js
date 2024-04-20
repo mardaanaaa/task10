@@ -1,5 +1,3 @@
-// src/__tests__/visual-tests/visualRegression.test.js
-
 import Percy from '@percy/puppeteer';
 
 describe('Visual Regression Tests', () => {

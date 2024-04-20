@@ -1,14 +1,21 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import App from './App.js';
 import store from './store.js';
+import App from './App.js';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration.js'; // Импортируйте serviceWorkerRegistration
 
-createRoot(document.getElementById('root')).render(
+ReactDOM.render(
     <Provider store={store}>
-        <App />
-    </Provider>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </Provider>,
+    document.getElementById('root')
 );
+
+serviceWorkerRegistration.register(); // Активируйте сервисный работник
 
 
 

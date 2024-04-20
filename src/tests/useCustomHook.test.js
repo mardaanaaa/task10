@@ -1,5 +1,5 @@
 import { renderHook, act } from '@testing-library/react-hooks';
-import useCustomHook from './useCustomHook';
+import useCustomHook from '../hooks/useCustomHook.js';
 
 test('should return initial value and update it', () => {
     const { result } = renderHook(() => useCustomHook());
@@ -12,3 +12,4 @@ test('should return initial value and update it', () => {
 
     expect(result.current.value).toBe(1);
 });
+

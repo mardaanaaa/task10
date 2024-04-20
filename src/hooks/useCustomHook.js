@@ -1,5 +1,5 @@
 import { renderHook, act } from '@testing-library/react-hooks';
-import useCustomHook from '../useCustomHook';
+import useCustomHook from '../hooks/useCustomHook.js';
 
 describe('useCustomHook', () => {
     test('should increment counter', () => {
